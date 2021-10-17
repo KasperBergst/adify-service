@@ -21,7 +21,7 @@ jobs:
 
       - name: Push to master
         run: |
-          git checkout ${GITHUB_REF#refs/heads/}
+          git checkout ${GITHUB_REF#refs/heads/master}
           git rebase origin/master
           git branch master
           git push origin master:master
