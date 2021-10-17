@@ -19,4 +19,3 @@ jobs:
           git branch release
           git push origin release:release
           git push origin :${GITHUB_REF#refs/heads/}
-
