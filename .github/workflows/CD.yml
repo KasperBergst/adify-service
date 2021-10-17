@@ -14,6 +14,7 @@ jobs:
 
       - name: Push to release
         run: |
+          echo ${GITHUB_REF#refs/heads/}
           git checkout ${GITHUB_REF#refs/heads/}
           git rebase origin/release
           git branch release
